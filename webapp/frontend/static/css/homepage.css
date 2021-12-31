@@ -95,9 +95,10 @@
 .right {
     width: 50%;
     height: 100%;
-    display: flex;
+    display: table-row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .image {
@@ -112,5 +113,24 @@
     font-size: 3vw;
     text-align: center;
     color: white;
+}
+
+a.button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 3em;
+}
+
+a.button:hover {
+    background-color: #fff;
+    color: #242424;
+    border: none;
 }
 

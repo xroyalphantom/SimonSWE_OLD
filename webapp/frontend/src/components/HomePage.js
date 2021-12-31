@@ -29,11 +29,14 @@ function HomePage() {
                 <div className="left">
 					<img src="https://picsum.photos/1200/1200" alt="" className="image" />
 				</div>
-				<div className="right">
+                <div className="right">
 					<p className="aboutme">
                         UWaterloo SE 2025
-                    </p>
-				</div>
+                    </p> 
+                    <a href="https://github.com/xroyalphantom" className="button" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/simon-d-huang" className="button" target="_blank">LinkedIn</a>
+                    <a href={Resume} target="_blank" className="button">Resume</a>
+                </div>
 			</div>
 		</div>
 		, 0.03);

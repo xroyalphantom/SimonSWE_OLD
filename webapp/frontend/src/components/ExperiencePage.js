@@ -1,31 +1,10 @@
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
-import { useState } from "react";
-import { styled } from '@mui/material/styles';
-import IconButton from '@mui/material/IconButton';
-import { Box, Card, CardContent, CardActions, CardMedia, CardActionArea } from "@material-ui/core";
-import Image from "../../static/images/SpaceWallpaper.jpg";
+import { Box, Card, CardContent, CardMedia, CardActionArea } from "@material-ui/core";
 import '../../static/css/experience.css';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Collapse } from "@mui/material";
-
-const styles = {
-    paperContainer: {
-        backgroundImage: `url(${Image})`
-    },
-};
-
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-  })(({ theme, expand }) => ({
-    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  }));
 
 function ExperiencePage() {
     const [expanded, setExpanded] = React.useState(false);
@@ -43,7 +22,7 @@ function ExperiencePage() {
             </Grid>
             <Grid item xs={12} align="center">
                 <Box mt={10} mb={10} ml={30} mr={30}>
-                    <Card variant="outlined" sx={{}}>
+                    <Card variant="outlined">
                         <CardActionArea onClick={handleExpandClick}>
                             <CardMedia
                             style={{

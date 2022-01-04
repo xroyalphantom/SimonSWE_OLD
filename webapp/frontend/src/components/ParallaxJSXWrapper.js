@@ -53,9 +53,11 @@ function ParallaxJSXWrapper(JSXElement, weight) {
                 this.animation_running = false;
                 return;
             }
-
-            this.wrappedJSXElement.current.style.top = `${this.state.start_position - this.last_offset}px`;
-
+            
+            if(this.wrappedJSXElement.current) {
+                this.wrappedJSXElement.current.style.top = `${this.state.start_position - this.last_offset}px`;
+            }
+            
             this.last_offset += difference;
 
             requestAnimationFrame(this.animation_loop);

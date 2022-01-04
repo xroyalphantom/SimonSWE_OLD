@@ -5,7 +5,7 @@
 .section1 {
     width: 100vw;
     max-width: 100%;
-    height: 550px;
+    height: 600px;
     position: fixed;
     top: 0;
     z-index: -9;
@@ -18,9 +18,9 @@
 .section2 {
     width: 100vw;
     max-width: 100%;
-    height: 550px;
+    height: 600px;
     position: fixed;
-    top: calc(550px * 1);
+    top: calc(600px * 1);
     z-index: 99;
 
     background-color: #572148;
@@ -29,9 +29,9 @@
 .section3 {
     width: 100vw;
     max-width: 100%;
-    height: 550px;
+    height: 600px;
     position: fixed;
-    top: calc(550px * 2);
+    top: calc(600px * 2);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -40,7 +40,7 @@
 
     font-size: 30px;
 
-    background-color: #1f256f;
+    background-color: #030014;
 }
 
 .name { 
@@ -118,7 +118,7 @@
 a.button {
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #030014;
     padding: 8px 20px;
     border-radius: 4px;
     outline: none;
@@ -130,7 +130,7 @@ a.button {
 
 a.button:hover {
     background-color: #fff;
-    color: #242424;
+    color: rgb(0, 0, 0);
     border: none;
 }
 

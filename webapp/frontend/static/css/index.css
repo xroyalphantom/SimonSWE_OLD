@@ -5,7 +5,8 @@
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    height: calc(550px * 3);
+    height: 1200px;
+    background-color: #030014;
 }
 
 body,

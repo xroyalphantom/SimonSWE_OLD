@@ -16,7 +16,7 @@ function HomePage() {
 
 			<div className="section2_container">
                 <div className="left">
-					<img src="https://picsum.photos/1200/1200" alt="" className="image" />
+					<img src="../../static/images/pfp.jpg" alt="" className="image" />
 				</div>
                 <div className="right">
 					<p className="aboutme">

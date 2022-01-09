@@ -51,7 +51,7 @@ function ExperiencePage() {
                                 <Collapse in={expanded} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>
-                                            - 
+                                            
                                         </Typography>
                                     </CardContent>
                                 </Collapse>
@@ -79,8 +79,17 @@ function ExperiencePage() {
                                 <Collapse in={expanded} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>
-                                            - Developed a wiki page using C#, Blazor, JavaScript, SQL
+                                        ► Developed a .NET Core web application that supports over 500 capital projects and applications, 3000 servers, and other vital systems that are used to operate the healthcare system for the province of BC
                                         </Typography>
+                                        <Typography paragraph>
+                                        ► Implemented a role-based access security layer to prevent users with insufficient permissions from editing and/or viewing sensitive health care information
+                                        </Typography>
+                                        <Typography paragraph>
+                                        ► Conducted C#, SQL, and Javascript software debugging across a large codebase while piloting agile implementation
+                                        </Typography> 
+                                        <Typography paragraph>
+                                        ► Led design and development of front-end and back-end portions of a wiki page using C#, Javascript, Blazor, and MS SQL Server    
+                                        </Typography>   
                                     </CardContent>
                                 </Collapse>
                             </CardActionArea>

@@ -14,10 +14,20 @@ const useStyles = makeStyles((theme) => ({
 
 function ProjectsPage() {
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded1, setExpanded1] = React.useState(false);
+    const [expanded2, setExpanded2] = React.useState(false);
+    const [expanded3, setExpanded3] = React.useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
+    const handleExpandClick1 = () => {
+        setExpanded1(!expanded1);
+    };
+
+    const handleExpandClick2 = () => {
+        setExpanded2(!expanded2);
+    };
+
+    const handleExpandClick3 = () => {
+        setExpanded3(!expanded3);
     };
 
     return (
@@ -31,7 +41,7 @@ function ProjectsPage() {
                 <Grid item xs={12} align="center">
                 <Box mt={10} mb={10} ml={30} mr={30}>
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick}>
+                            <CardActionArea onClick={handleExpandClick3}>
                                 <CardMedia
                                 style={{
                                     width: "auto",
@@ -47,13 +57,13 @@ function ProjectsPage() {
                                 </Typography>
                                 </CardContent>
                                 <ExpandMoreIcon />
-                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                <Collapse in={expanded3} timeout="auto" unmountOnExit>
                                     <CardContent>
                                     <Typography variant="h6">
                                             React | Django | JavaScript | Python | AWS | HTML/CSS
                                         </Typography>
                                         <Typography paragraph>
-                                            Website using React for frontend and Django as the backend
+                                            ► Website using React for frontend and Django as the backend
                                         </Typography>
                                         <a href="https://github.com/xroyalphantom/SimonSWE" target="_blank">GitHub</a>
                                     </CardContent>
@@ -63,7 +73,7 @@ function ProjectsPage() {
                     </Box>
                     <Box mt={10} mb={10} ml={30} mr={30}>
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick}>
+                            <CardActionArea onClick={handleExpandClick2}>
                                 <CardMedia
                                 style={{
                                     width: "auto",
@@ -79,15 +89,55 @@ function ProjectsPage() {
                                 </Typography>
                                 </CardContent>
                                 <ExpandMoreIcon />
-                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                <Collapse in={expanded2} timeout="auto" unmountOnExit>
                                     <CardContent>
-                                    <Typography variant="h6">
+                                        <Typography variant="h6">
                                             Pygame | Python
                                         </Typography>
                                         <Typography paragraph>
-                                            
+                                            ► Used object-oriented programming in Python to create a game inspired by Space Invaders
+                                        </Typography>
+                                        <Typography paragraph>
+                                            ► Implemented collision detection and increasing game difficulty with Pygame
                                         </Typography>
                                         <a href="https://github.com/xroyalphantom/Impossible-Invaders" target="_blank">GitHub</a>
+                                    </CardContent>
+                                </Collapse>
+                            </CardActionArea>
+                        </Card>
+                    </Box>
+                    <Box mt={10} mb={10} ml={30} mr={30}>
+                        <Card variant="outlined">
+                            <CardActionArea onClick={handleExpandClick1}>
+                                <CardMedia
+                                style={{
+                                    width: "auto",
+                                    maxHeight: "200px"
+                                }}
+                                component="img"
+                                image=""
+                                alt=""
+                                />
+                                <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    MONKE Assistant
+                                </Typography>
+                                </CardContent>
+                                <ExpandMoreIcon />
+                                <Collapse in={expanded1} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                        <Typography variant="h6">
+                                            Python | gTTS | Speech Recognition
+                                        </Typography>
+                                        <Typography paragraph>
+                                            ► Integrated PyPI libraries in Python to program a bot that assists with simple tasks, such as capturing images, applying a filter to the images, then posting them onto Discord or Twitter via a bot using their APIs.
+                                        </Typography>
+                                        <Typography paragraph>
+                                            ► Implemented unique voice commands with a Speech Recognition API that trigger various bot functions
+                                        </Typography>
+                                        <Typography paragraph>
+                                            ► Established randomized dialogue with gTTS’s API to converse with the user
+                                        </Typography>
                                     </CardContent>
                                 </Collapse>
                             </CardActionArea>

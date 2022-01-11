@@ -52,6 +52,10 @@
     font-family:"Brush Script MT";
     font-size: 10vw;
     color: white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .space {

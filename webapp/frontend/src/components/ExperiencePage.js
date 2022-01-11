@@ -13,10 +13,15 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 function ExperiencePage() {
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded1, setExpanded1] = React.useState(false);
+    const [expanded2, setExpanded2] = React.useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
+    const handleExpandClick1 = () => {
+        setExpanded1(!expanded1);
+    };
+
+    const handleExpandClick2 = () => {
+        setExpanded2(!expanded2);
     };
 
     const classes = useStyles();
@@ -32,7 +37,7 @@ function ExperiencePage() {
                 <Grid item xs={12} align="center">
                 <Box mt={10} mb={10} ml={30} mr={30}>
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick}>
+                            <CardActionArea onClick={handleExpandClick2}>
                                 <CardMedia
                                 style={{
                                     width: "auto",
@@ -48,7 +53,7 @@ function ExperiencePage() {
                                 </Typography>
                                 </CardContent>
                                 <ExpandMoreIcon />
-                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                <Collapse in={expanded2} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>
                                             
@@ -60,7 +65,7 @@ function ExperiencePage() {
                     </Box>
                     <Box mt={10} mb={10} ml={30} mr={30}>
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick}>
+                            <CardActionArea onClick={handleExpandClick1}>
                                 <CardMedia
                                 style={{
                                     width: "auto",
@@ -76,7 +81,7 @@ function ExperiencePage() {
                                 </Typography>
                                 </CardContent>
                                 <ExpandMoreIcon />
-                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                <Collapse in={expanded1} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>
                                         ► Developed a .NET Core web application that supports over 500 capital projects and applications, 3000 servers, and other vital systems that are used to operate the healthcare system for the province of BC

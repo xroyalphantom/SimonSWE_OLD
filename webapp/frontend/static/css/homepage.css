@@ -69,14 +69,14 @@
 .svg_curve_top {
     width: 100%;
     height: 5vw;
-    position: absolute;
+    position: fixed;
     transform: translateY(-99%);
 }
 
 .svg_curve_bottom {
     width: 100%;
     height: 5vw;
-    position: absolute;
+    position: fixed;
 }
 
 .section2_container {
@@ -104,7 +104,6 @@
     align-items: center;
     text-align: center;
     margin-top: 20vw;
-
 }
 
 .image {
@@ -142,3 +141,53 @@ a.button:hover {
     border: none;
 }
 
+@media screen and (max-width: 960px) {
+
+    .section1 {
+        position: static;
+    }
+    
+    .section2 {
+        position: static;
+    }
+    
+    .section3 {
+        position: static;
+    }
+
+    .name {
+        font-size: 6rem;
+        white-space: normal;
+        padding-top: 25%;
+    }
+
+    .space {
+        position: static;
+    }
+
+    .svg_curve_top {
+        position: static;
+    }
+    
+    .svg_curve_bottom {
+        position: static;
+    }
+
+    .left {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        max-width: 0px;
+        max-height: 0px;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        display: grid;
+    }
+
+    .aboutme {
+        font-size: 10vw;
+    }
+}

@@ -35,7 +35,7 @@ function ExperiencePage() {
                     </Box>
                 </Grid>
                 <Grid item xs={12} align="center">
-                <Box mt={10} mb={10} ml={30} mr={30}>
+                <Box className="cardbox">
                         <Card variant="outlined">
                             <CardActionArea onClick={handleExpandClick2}>
                                 <CardMedia
@@ -63,7 +63,7 @@ function ExperiencePage() {
                             </CardActionArea>
                         </Card>
                     </Box>
-                    <Box mt={10} mb={10} ml={30} mr={30}>
+                    <Box className="cardbox">
                         <Card variant="outlined">
                             <CardActionArea onClick={handleExpandClick1}>
                                 <CardMedia

@@ -30,22 +30,14 @@ function HomePage() {
 		</div>
 		, 0.03);
 
-        const Section3 = ParallaxJSXWrapper(
-            <div className="section3">
-                
-            </div>
-            , 0.03);
-
     return (
-        <div className="main-container">
+        <div className="main-container" style={{height: '1500px'}}>
             <div className="section1">
                 <Space />
                 <Name />
             </div>
             <Section2 />
-            <Section3 />
         </div>
-        
     );
 }
 

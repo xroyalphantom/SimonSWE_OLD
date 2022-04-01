@@ -17,6 +17,7 @@ function ProjectsPage() {
     const [expanded1, setExpanded1] = React.useState(false);
     const [expanded2, setExpanded2] = React.useState(false);
     const [expanded3, setExpanded3] = React.useState(false);
+    const [expanded4, setExpanded4] = React.useState(false);
 
     const handleExpandClick1 = () => {
         setExpanded1(!expanded1);
@@ -30,6 +31,10 @@ function ProjectsPage() {
         setExpanded3(!expanded3);
     };
 
+    const handleExpandClick4 = () => {
+        setExpanded4(!expanded4);
+    }
+
     return (
         <Paper className={classes.paper}> 
             <Grid container> 
@@ -39,7 +44,38 @@ function ProjectsPage() {
                     </Box>
                 </Grid>  
                 <Grid item xs={12} align="center">
-                <Box className="cardbox">
+                    <Box className="cardbox">
+                        <Card variant="outlined">
+                            <CardActionArea onClick={handleExpandClick4}>
+                                <CardMedia
+                                style={{
+                                    width: "auto",
+                                    maxHeight: "200px"
+                                }}
+                                component="img"
+                                image=""
+                                alt=""
+                                />
+                                <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    xRoyalBot
+                                </Typography>
+                                </CardContent>
+                                <ExpandMoreIcon />
+                                <Collapse in={expanded4} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                        <Typography variant="h6">
+                                            JavaScript | REST APIs
+                                        </Typography>
+                                        <Typography paragraph>
+                                            ► Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching Ethereum price from an API.
+                                        </Typography>
+                                    </CardContent>
+                                </Collapse>
+                            </CardActionArea>
+                        </Card>
+                    </Box>
+                    <Box className="cardbox">
                         <Card variant="outlined">
                             <CardActionArea onClick={handleExpandClick3}>
                                 <CardMedia

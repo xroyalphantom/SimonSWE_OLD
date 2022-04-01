@@ -1,7 +1,3 @@
-.main_container {
-    height: auto;
-}
-
 .section1 {
     width: 100vw;
     max-width: 100%;
@@ -12,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .section2 {
@@ -55,7 +50,6 @@
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .space {
@@ -140,34 +134,60 @@ a.button:hover {
 }
 
 @media screen and (max-width: 960px) {
-
     .section1 {
-        position: static;
+        width: 100vw;
+        max-width: 100%;
+        height: 600px;
+        position: relative;
+        top: 0;
+        z-index: -9;
+        display: block;
+        justify-content: center;
+        align-items: center;
     }
     
     .section2 {
+        width: 100vw;
+        max-width: 100%;
+        height: 900px;
         position: static;
+        top: calc(600px * 1);
+        z-index: 99;
+    
+        background-color: #572148;
+    }
+
+    .name { 
+        position: static;
+        margin-left: 50vw;
+        padding-bottom: 160vw;
+        font-size: 4em;
+        width: 100vw;
+        line-height: 4em;
+        height: 14em;      
+        overflow: hidden; 
     }
     
-    .section3 {
-        position: static;
-    }
-
-    .name {
-        font-size: 6rem;
-        white-space: normal;
-        padding-top: 25%;
-    }
-
     .space {
         position: static;
+        max-width: 100vw;
+        height: 160vw;
+        object-fit: cover;
     }
-
+    
+    
     .svg_curve_top {
+        width: 100%;
+        height: 5vw;
+        z-index: 95;
         position: static;
+        transform: translateY(-99%);
     }
     
     .svg_curve_bottom {
+        width: 100%;
+        height: 5vw;
+        z-index: 95;
         position: static;
     }
 

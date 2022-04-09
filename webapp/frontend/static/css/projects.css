@@ -3,16 +3,14 @@
 }
 
 .cardbox {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-right: 300px;
 }
 
 @media screen and (max-width: 960px) {
-    
     .cardbox {
         margin: 15%;
     }
-
 }

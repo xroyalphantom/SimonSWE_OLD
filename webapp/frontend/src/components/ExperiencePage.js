@@ -4,6 +4,7 @@ import React from "react";
 import { Box, Card, CardContent, CardMedia, CardActionArea, Paper, makeStyles } from "@material-ui/core";
 import '../../static/css/experience.css';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Collapse } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,7 +53,8 @@ function ExperiencePage() {
                                     C# Developer @ AuraData
                                 </Typography>
                                 </CardContent>
-                                <ExpandMoreIcon />
+                                {expanded2 && <ExpandMoreIcon />}
+                                {!expanded2 && <ExpandLessIcon />}
                                 <Collapse in={expanded2} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>
@@ -80,7 +82,8 @@ function ExperiencePage() {
                                     Full-Stack Developer @ Provincial Health Services Authority
                                 </Typography>
                                 </CardContent>
-                                <ExpandMoreIcon />
+                                {expanded1 && <ExpandMoreIcon />}
+                                {!expanded1 && <ExpandLessIcon />}
                                 <Collapse in={expanded1} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>

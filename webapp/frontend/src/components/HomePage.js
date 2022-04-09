@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Resume from "../../static/files/SimonHuang_Resume.pdf";
+import WebFont from 'webfontloader';
 
 import '../../static/css/homepage.css';
 import ParallaxJSXWrapper from "./ParallaxJSXWrapper";
 
 function HomePage() {
-    const Name = ParallaxJSXWrapper(<div className="name">Simon Huang</div>, 0.05);
-    const Space = ParallaxJSXWrapper(<img src="../../static/images/SpaceWallpaper.jpg" alt="" className="space" />, 0.01);
+
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Beau Rivage', 'Courgette', 'Great Vibes']
+          }
+        });
+       }, []);
+
+    const Name = ParallaxJSXWrapper(<div className="name">Simon Huang</div>, 0.25);
+    const Space = ParallaxJSXWrapper(<img src="../../static/images/SpaceWallpaper.jpg" alt="" className="space" />, 0.05);
 
     const Section2 = ParallaxJSXWrapper(
 		<div className="section2">
@@ -28,7 +38,7 @@ function HomePage() {
                 </div>
 			</div>
 		</div>
-		, 0.03);
+		, 0.15);
 
     return (
         <div className="main-container" style={{height: '1500px'}}>

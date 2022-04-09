@@ -3,8 +3,6 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import { Box, Card, CardContent, CardMedia, CardActionArea, Paper, makeStyles } from "@material-ui/core";
 import '../../static/css/projects.css';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Collapse } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -14,26 +12,6 @@ const useStyles = makeStyles((theme) => ({
 
 function ProjectsPage() {
     const classes = useStyles();
-    const [expanded1, setExpanded1] = React.useState(false);
-    const [expanded2, setExpanded2] = React.useState(false);
-    const [expanded3, setExpanded3] = React.useState(false);
-    const [expanded4, setExpanded4] = React.useState(false);
-
-    const handleExpandClick1 = () => {
-        setExpanded1(!expanded1);
-    };
-
-    const handleExpandClick2 = () => {
-        setExpanded2(!expanded2);
-    };
-
-    const handleExpandClick3 = () => {
-        setExpanded3(!expanded3);
-    };
-
-    const handleExpandClick4 = () => {
-        setExpanded4(!expanded4);
-    }
 
     return (
         <Paper className={classes.paper}> 
@@ -46,136 +24,128 @@ function ProjectsPage() {
                 <Grid item xs={12} align="center">
                     <Box className="cardbox">
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick4}>
+                            <CardActionArea href="https://github.com/xroyalphantom/xRoyalBot" target="_blank">
                                 <CardMedia
-                                style={{
-                                    width: "auto",
-                                    maxHeight: "200px"
-                                }}
-                                component="img"
-                                image=""
-                                alt=""
+                                    style={{
+                                        width: "auto",
+                                        maxWidth: "200px",
+                                        maxHeight: "200px",
+                                        float: "left",
+                                        margin: "2vw",                                        
+                                    }}
+                                    component="img"
+                                    image="../../static/images/xrp-removebg.png"
+                                    alt=""
                                 />
                                 <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    xRoyalBot
-                                </Typography>
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                        xRoyalBot
+                                    </Typography>
+                                    <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
+                                        JavaScript | REST APIs | Heroku
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching Ethereum price from an API.
+                                    </Typography>
                                 </CardContent>
-                                <ExpandMoreIcon />
-                                <Collapse in={expanded4} timeout="auto" unmountOnExit>
-                                    <CardContent>
-                                        <Typography variant="h6">
-                                            JavaScript | REST APIs
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching Ethereum price from an API.
-                                        </Typography>
-                                    </CardContent>
-                                </Collapse>
                             </CardActionArea>
                         </Card>
                     </Box>
                     <Box className="cardbox">
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick3}>
+                            <CardActionArea href="https://github.com/xroyalphantom/SimonSWE" target="_blank">
                                 <CardMedia
-                                style={{
-                                    width: "auto",
-                                    maxHeight: "200px"
-                                }}
-                                component="img"
-                                image=""
-                                alt=""
+                                    style={{
+                                        width: "auto",
+                                        maxWidth: "200px",
+                                        maxHeight: "200px",
+                                        float: "left",
+                                        margin: "2vw",                                        
+                                    }}
+                                    component="img"
+                                    image="../../static/images/robot.png"
+                                    alt=""
                                 />
                                 <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    SimonSWE
-                                </Typography>
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                        SimonSWE
+                                    </Typography>
+                                    <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
+                                        React | Django | JavaScript | Python | AWS | HTML/CSS
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Website using React and Material UI for the frontend; Django as the backend
+                                    </Typography>
                                 </CardContent>
-                                <ExpandMoreIcon />
-                                <Collapse in={expanded3} timeout="auto" unmountOnExit>
-                                    <CardContent>
-                                    <Typography variant="h6">
-                                            React | Django | JavaScript | Python | AWS | HTML/CSS
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Website using React for frontend and Django as the backend
-                                        </Typography>
-                                        <a href="https://github.com/xroyalphantom/SimonSWE" target="_blank">GitHub</a>
-                                    </CardContent>
-                                </Collapse>
                             </CardActionArea>
                         </Card>
                     </Box>
                     <Box className="cardbox">
                         <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick2}>
+                            <CardActionArea href="https://github.com/xroyalphantom/Impossible-Invaders" target="_blank">
                                 <CardMedia
-                                style={{
-                                    width: "auto",
-                                    maxHeight: "200px"
-                                }}
-                                component="img"
-                                image=""
-                                alt=""
+                                    style={{
+                                        width: "auto",
+                                        maxWidth: "200px",
+                                        maxHeight: "200px",
+                                        float: "left",
+                                        margin: "2vw",
+                                        paddingTop: "1vw"                              
+                                    }}
+                                    component="img"
+                                    image="../../static/images/invader.png"
+                                    alt=""
                                 />
                                 <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Impossible Invaders
-                                </Typography>
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                        Impossible Invaders
+                                    </Typography>
+                                    <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
+                                        Pygame | Python | OOP
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Used object-oriented programming in Python to create a game inspired by Space Invaders
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Implemented collision detection and increasing game difficulty with Pygame
+                                    </Typography>
                                 </CardContent>
-                                <ExpandMoreIcon />
-                                <Collapse in={expanded2} timeout="auto" unmountOnExit>
-                                    <CardContent>
-                                        <Typography variant="h6">
-                                            Pygame | Python
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Used object-oriented programming in Python to create a game inspired by Space Invaders
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Implemented collision detection and increasing game difficulty with Pygame
-                                        </Typography>
-                                        <a href="https://github.com/xroyalphantom/Impossible-Invaders" target="_blank">GitHub</a>
-                                    </CardContent>
-                                </Collapse>
                             </CardActionArea>
                         </Card>
                     </Box>
                     <Box className="cardbox">
-                        <Card variant="outlined">
-                            <CardActionArea onClick={handleExpandClick1}>
+                    <Card variant="outlined">
+                            <CardActionArea>
                                 <CardMedia
-                                style={{
-                                    width: "auto",
-                                    maxHeight: "200px"
-                                }}
-                                component="img"
-                                image=""
-                                alt=""
+                                    style={{
+                                        width: "auto",
+                                        maxWidth: "200px",
+                                        maxHeight: "200px",
+                                        float: "left",
+                                        margin: "2vw",
+                                        paddingTop: "1vw",                                     
+                                    }}
+                                    component="img"
+                                    image="../../static/images/monkey.png"
+                                    alt=""
                                 />
                                 <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    MONKE Assistant
-                                </Typography>
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                        MONKE Assistant
+                                    </Typography>
+                                    <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
+                                        Python | gTTS | Speech Recognition
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Integrated PyPI libraries in Python to program a bot that assists with simple tasks, such as capturing images, applying a filter to the images, then posting them onto Discord or Twitter via a bot using their APIs.
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Implemented unique voice commands with a Speech Recognition API that trigger various bot functions
+                                    </Typography>
+                                    <Typography paragraph align="left">
+                                        ► Established randomized dialogue with gTTS’s API to converse with the user
+                                    </Typography>
                                 </CardContent>
-                                <ExpandMoreIcon />
-                                <Collapse in={expanded1} timeout="auto" unmountOnExit>
-                                    <CardContent>
-                                        <Typography variant="h6">
-                                            Python | gTTS | Speech Recognition
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Integrated PyPI libraries in Python to program a bot that assists with simple tasks, such as capturing images, applying a filter to the images, then posting them onto Discord or Twitter via a bot using their APIs.
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Implemented unique voice commands with a Speech Recognition API that trigger various bot functions
-                                        </Typography>
-                                        <Typography paragraph>
-                                            ► Established randomized dialogue with gTTS’s API to converse with the user
-                                        </Typography>
-                                    </CardContent>
-                                </Collapse>
                             </CardActionArea>
                         </Card>
                     </Box>

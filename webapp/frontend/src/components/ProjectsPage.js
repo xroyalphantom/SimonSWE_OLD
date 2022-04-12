@@ -31,7 +31,7 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw",                       
+                                        margin: "4vw",                       
                                     }}
                                     component="img"
                                     image="../../static/images/xrp-removebg.png"
@@ -60,7 +60,7 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw",                                     
+                                        margin: "4vw",                                     
                                     }}
                                     component="img"
                                     image="../../static/images/robot.png"
@@ -89,7 +89,7 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw"                          
+                                        margin: "4vw",                          
                                     }}
                                     component="img"
                                     image="../../static/images/invader.png"
@@ -121,7 +121,7 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw"                              
+                                        margin: "4vw",                             
                                     }}
                                     component="img"
                                     image="../../static/images/monkey.png"

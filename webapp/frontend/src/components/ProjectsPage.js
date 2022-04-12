@@ -31,14 +31,14 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw",                                        
+                                        margin: "2vw",                       
                                     }}
                                     component="img"
                                     image="../../static/images/xrp-removebg.png"
                                     alt=""
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "3.5em"}} align="left">
                                         xRoyalBot
                                     </Typography>
                                     <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
@@ -60,14 +60,14 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw",                                        
+                                        margin: "2vw",                                     
                                     }}
                                     component="img"
                                     image="../../static/images/robot.png"
                                     alt=""
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "3.5em"}} align="left">
                                         SimonSWE
                                     </Typography>
                                     <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
@@ -89,15 +89,14 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw",
-                                        paddingTop: "1vw"                              
+                                        margin: "2vw"                          
                                     }}
                                     component="img"
                                     image="../../static/images/invader.png"
                                     alt=""
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "3.5em"}} align="left">
                                         Impossible Invaders
                                     </Typography>
                                     <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">
@@ -122,15 +121,14 @@ function ProjectsPage() {
                                         maxWidth: "200px",
                                         maxHeight: "200px",
                                         float: "left",
-                                        margin: "2vw",
-                                        paddingTop: "1vw",                                     
+                                        margin: "2vw"                              
                                     }}
                                     component="img"
                                     image="../../static/images/monkey.png"
                                     alt=""
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "2.5vw"}} align="left">
+                                    <Typography gutterBottom variant="h5" component="div" style={{marginTop: "1vw", fontSize: "3.5em"}} align="left">
                                         MONKE Assistant
                                     </Typography>
                                     <Typography variant="h6" style={{marginBottom: "1vw"}} align="left">

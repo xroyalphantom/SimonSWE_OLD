@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 function ExperiencePage() {
     const [expanded1, setExpanded1] = React.useState(false);
     const [expanded2, setExpanded2] = React.useState(false);
+    const [expanded3, setExpanded3] = React.useState(false);
 
     const handleExpandClick1 = () => {
         setExpanded1(!expanded1);
@@ -23,6 +24,10 @@ function ExperiencePage() {
 
     const handleExpandClick2 = () => {
         setExpanded2(!expanded2);
+    };
+
+    const handleExpandClick3 = () => {
+        setExpanded3(!expanded3);
     };
 
     const classes = useStyles();
@@ -36,7 +41,36 @@ function ExperiencePage() {
                     </Box>
                 </Grid>
                 <Grid item xs={12} align="center">
-                <Box className="cardbox">
+                    <Box className="cardbox">
+                        <Card variant="outlined">
+                            <CardActionArea onClick={handleExpandClick3}>
+                                <CardMedia
+                                style={{
+                                    width: "auto",
+                                    maxHeight: "200px"
+                                }}
+                                component="img"
+                                image="../../static/images/gsoft.png"
+                                alt=""
+                                />
+                                <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Full-Stack Engineer @ GSoft
+                                </Typography>
+                                </CardContent>
+                                {expanded3 && <ExpandMoreIcon />}
+                                {!expanded3 && <ExpandLessIcon />}
+                                <Collapse in={expanded3} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                        <Typography paragraph>
+                                            
+                                        </Typography>
+                                    </CardContent>
+                                </Collapse>
+                            </CardActionArea>
+                        </Card>
+                    </Box>
+                    <Box className="cardbox">
                         <Card variant="outlined">
                             <CardActionArea onClick={handleExpandClick2}>
                                 <CardMedia
@@ -58,7 +92,16 @@ function ExperiencePage() {
                                 <Collapse in={expanded2} timeout="auto" unmountOnExit>
                                     <CardContent>
                                         <Typography paragraph>
-                                            
+                                        ► Redesigned a web application used internationally for education verification services utilizing Angular (TypeScript), Bootstrap, HTML/CSS for the front-end and .NET Core along with ABP as a framework for the backend
+                                        </Typography>
+                                        <Typography paragraph>
+                                        ► Built RESTful APIs using Entity Framework (C#), Microsoft SQL Server, and Azure to process over 10k subject verifications per month as well as create per-organization subscriber accounts, currently generating $1.3 million in revenue annually on the old site
+                                        </Typography>
+                                        <Typography paragraph>
+                                        ► Integrated Bambora Payment SDK into the web application to make requests to the payment gateway via third-party API to allow clients to store card profiles as well as make payments through Bambora
+                                        </Typography>
+                                        <Typography paragraph>
+                                        ► Designed and implemented data models with relational databases, to store the company's accounting information such as tax reporting info, payment amounts, and user balance tracking
                                         </Typography>
                                     </CardContent>
                                 </Collapse>

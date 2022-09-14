@@ -9,7 +9,7 @@ import { Collapse } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-      backgroundColor: "#030014"
+      backgroundColor: "#0939A2"
     }
   }));
 
@@ -47,7 +47,7 @@ function ExperiencePage() {
                                 <CardMedia
                                 style={{
                                     width: "auto",
-                                    maxHeight: "200px"
+                                    maxHeight: "150px"
                                 }}
                                 component="img"
                                 image="../../static/images/gsoft.png"

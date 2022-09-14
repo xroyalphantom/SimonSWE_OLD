@@ -6,7 +6,7 @@ import '../../static/css/projects.css';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-      backgroundColor: "#030014"
+      backgroundColor: "#0939A2"
     }
   }));
 

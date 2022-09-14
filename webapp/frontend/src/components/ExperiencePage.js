@@ -47,7 +47,8 @@ function ExperiencePage() {
                                 <CardMedia
                                 style={{
                                     width: "auto",
-                                    maxHeight: "150px"
+                                    maxHeight: "120px",
+                                    padding: "25px"
                                 }}
                                 component="img"
                                 image="../../static/images/gsoft.png"

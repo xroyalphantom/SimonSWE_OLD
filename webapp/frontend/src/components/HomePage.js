@@ -20,7 +20,7 @@ function HomePage() {
 
     const Section2 = ParallaxJSXWrapper(
 		<div className="section2">
-			<svg className="svg_curve_top" xmlns="http://www.w3.org/2000/svg" fill="#0939A2" viewBox="0 0 100 100" preserveAspectRatio="none" >
+			<svg className="svg_curve_top" xmlns="http://www.w3.org/2000/svg" fill="#011F44" viewBox="0 0 100 100" preserveAspectRatio="none" >
 				<path d="M0,100 C20,-80 26,90 100,100" />
 			</svg>
 

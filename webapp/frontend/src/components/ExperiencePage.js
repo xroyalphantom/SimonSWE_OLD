@@ -9,7 +9,7 @@ import { Collapse } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-      backgroundColor: "#0939A2"
+      backgroundColor: "#011F44"
     }
   }));
 
